@@ -20,4 +20,15 @@
 		android:id="@+id/image_view"
 		android:layout_width="196dp"
 		android:layout_height="196dp"/>
+	
+	<TextView
+		android:id="@+id/value_text"
+		android:textSize="16sp"
+		android:gravity="center"
+		android:text="value"
+		android:textColor="@color/colorAccent"
+		android:layout_gravity="bottom"
+		android:layout_marginBottom="48dp"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"/>
 </FrameLayout>

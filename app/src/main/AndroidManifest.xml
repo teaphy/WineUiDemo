@@ -5,6 +5,11 @@
 	
 	<uses-permission android:name="android.permission.CAMERA"/>
 	
+	<uses-feature android:name="android.hardware.camera"/>
+	<uses-feature android:name="android.hardware.camera.autofocus"/>
+	
+	<uses-permission android:name="android.permission.INTERNET"/>
+	
 	<application
 		android:name=".app.WineUiApplication"
 		android:allowBackup="true"
@@ -13,8 +18,12 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/AppTheme"
+		android:usesCleartextTraffic="true"
 		tools:ignore="GoogleAppIndexingWarning">
-		<activity android:name=".scan.ScanActivity"
+		<activity android:name=".viewpager2.VmActivity">
+		</activity>
+		<activity
+			android:name=".scan.ScanActivity"
 			android:screenOrientation="portrait">
 		</activity>
 		<activity android:name=".progress.ProgressBarActivity">

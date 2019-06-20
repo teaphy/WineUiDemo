@@ -18,7 +18,14 @@ class MainActivity : AppCompatActivity() {
 			R.id.start_camera_button -> goToTakePhoto()
 			R.id.progress_bar_button -> goProgressBar()
 			R.id.scan_button -> goScan()
+			R.id.view_pager_button -> goViewPager()
 		}
+	}
+
+	private fun goViewPager() {
+		ARouter.getInstance()
+			.build("/account/viewpager2")
+			.navigation()
 	}
 
 	private fun goScan() {
